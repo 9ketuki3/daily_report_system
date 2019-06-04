@@ -41,7 +41,7 @@ public class LoginFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
         String context_path = ((HttpServletRequest) request).getContextPath();
-        String servlet_path = ((HttpServletRequest) request).getContextPath();
+        String servlet_path = ((HttpServletRequest) request).getServletPath();
 
         if (!servlet_path.matches("/css.*")) { //cssフォルダ内は認証処理から除外する
             HttpSession session = ((HttpServletRequest) request).getSession();

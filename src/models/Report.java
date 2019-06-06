@@ -71,7 +71,7 @@ public class Report {
         this.employee = employee;
     }
 
-    public Date getReport_data(){
+    public Date getReport_date(){
         return report_date;
     }
 

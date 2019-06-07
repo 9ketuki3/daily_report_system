@@ -16,7 +16,7 @@
         </c:choose>
 
         <p>
-            <a href="<c:url value='reports/index' />">一覧に戻る</a>
+            <a href="<c:url value='/reports/index' />">一覧に戻る</a>
         </p>
     </c:param>
 </c:import>
